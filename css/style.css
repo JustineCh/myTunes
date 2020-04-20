@@ -1,0 +1,480 @@
+@import url('https://fonts.googleapis.com/css?family=Barlow&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Pacifico&display=swap');
+
+
+/*CSS Variables*/
+:root {
+    --primary-color: #b90415;
+    --primary-color-hover: #d3071b;
+    --secondary-color: #264d00;
+    --secondary-color-hover: #336600;
+    --light-color: #f4f4f4;
+}
+
+
+body {
+    font-family: 'Barlow', sans-serif;
+    background-color: #252529;
+    margin: 0;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+img {
+    width:100%;
+}
+
+.img-size {
+    width: 91%;
+}
+
+a {
+    text-decoration: none;
+    color: #cccccc;
+}
+
+
+
+
+/*Sections*/
+
+.section {
+    padding: 2rem 0;
+}
+
+.section-head {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+.section h3 {
+    font-size: 2rem;
+}
+
+#fun {
+    height: 85vh;
+    background: url(../img/fun3.jpg) no-repeat top/cover;
+}
+
+
+/*Showcase*/
+
+#showcase {
+    margin: 0;
+    padding: 0;
+    background: url("../img/showcase4.jpg") no-repeat center/cover;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow-y: hidden;
+}
+
+
+#showcase .container {
+
+    position: relative;
+    margin-top: 40vh;
+    margin-left: 44vw;
+    margin-right: 5vw;
+    text-align: center;
+    color: #333333;
+    line-height: 1.5;
+}
+
+.container {
+    max-width: 1180px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0 3rem;
+}
+
+.gift-card-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10%;
+}
+
+.gift-card-section-text {
+    margin-top: 10vh;
+}
+
+.lead {
+    font-size: 1.3em;
+}
+
+.mb {
+    margin-bottom: 1rem;
+}
+
+.mt {
+    margin-top: 1rem;
+}
+
+.bg-light {
+    background: var(--light-color);
+    color: #333333;
+}
+
+#showcase .container h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 8.2vw;
+    line-height: 0.7;
+    color: #b90415;
+}
+
+#showcase .container h2 {
+    font-size: 1.9vw;
+}
+
+
+.text-center {
+    text-align: center;
+}
+
+
+/*Navigation*/
+
+nav {
+    height: 40px;
+    width: 100%;
+    background-color: #333;
+    color: #eee;
+    position: fixed;
+    z-index: 1;
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    display: inline;
+    float: left;
+
+}
+
+nav a {
+    display: inline-block;
+    width: 100px;
+    text-align: center;
+    font-family: 'Barlow', sans-serif;
+    font-weight: lighter;
+    text-decoration: none;
+    padding: 9px 10px;
+    color: #eee;
+}
+
+nav i {
+    padding-right: 5px;
+}
+
+nav li:hover {
+    background-color: #444;
+}
+
+nav a#openup {
+    display: none;
+}
+
+.nav-myTunes {
+    font-family: 'Pacifico', cursive;
+    font-size: 1rem;
+}
+
+
+.cf:before, .cf:after {
+    content: "";
+    display: table;
+}
+
+.cf:after {
+    clear: both;
+}
+
+.cf {
+    zoom: 1;
+}
+
+
+
+
+/*Buttons*/
+
+.btn {
+    color: #ffffff;
+    padding: 1rem;
+    display: inline-block;
+}
+
+.btn-primary {
+    background: var(--primary-color);
+}
+
+.btn-primary:hover {
+    background: var(--primary-color-hover);
+}
+
+.btn-secondary {
+    background: var(--secondary-color);
+}
+
+.btn-secondary:hover {
+    background: var(--secondary-color-hover);
+}
+
+
+/*Text colors*/
+
+.text-primary {
+    color: var(--primary-color);
+}
+
+.text-secondary {
+    color: var(--secondary-color);
+}
+
+.text-light {
+    color: var(--light-color);
+}
+
+/*Footer*/
+
+footer .footer-col{
+    display: grid;
+    grid-gap: 10%;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 2rem;
+    text-align: left;
+    font-size: 14px;
+}
+
+footer .footer-col ul {
+    list-style: none;
+}
+ footer .footer-col ul li:first-child{
+     font-size: 1rem;
+     padding-bottom: 0.5rem;
+     border-bottom: #444444 solid 1px;
+     margin-bottom: 1rem;
+ }
+
+ footer .footer-bottom {
+     background: #333333;
+     padding: 1rem;
+ }
+
+/*Media Queries*/
+
+
+@media screen
+and (max-width: 1286px) {
+
+    #showcase {
+        height: 80vh;
+    }
+
+    #showcase .container {
+        margin-top: 40vh;
+    }
+
+    .hide-on-small {
+        display: none;
+    }
+
+    #fun {
+        height: 55vh;
+    }
+
+
+    nav {
+        height: auto;
+        border-bottom: 0;
+    }
+
+    nav ul {
+        display: none;
+        height: auto;
+    }
+
+    nav li {
+        width: 100%;
+        float: left;
+        position: relative;
+    }
+
+    nav a {
+
+        text-align: left;
+        width: 100%;
+        text-indent: 25px;
+        background: #333;
+        border-bottom: 1px solid #555;
+    }
+
+    nav a:hover {
+        background: #444;
+    }
+
+    nav a#openup:after {
+        font-family: 'Barlow', sans-serif;
+        content: "|||";
+        transform: rotate(-90deg);
+        -ms-transform: rotate(-90deg);
+        /* IE 9 */
+        -webkit-transform: rotate(-90deg);
+        /* Safari and Chrome */
+        width: 30px;
+        height: 30px;
+        display: inline-block;
+        position: absolute;
+        right: 40px;
+        top: 20px;
+    }
+
+    nav a#openup {
+        display: block;
+        background-color: #333;
+        width: 100%;
+        position: relative;
+    }
+
+    footer .footer-col {
+        display: none;
+    }
+}
+
+@media screen
+and (max-width: 1024px) {
+
+    #showcase .container {
+        margin-top: 48vh;
+    }
+
+    .gift-card-container img {
+        margin-top: 15vh;
+    }
+
+    #fun {
+        height: 75vh;
+    }
+}
+
+@media screen
+and (max-width: 863px) {
+
+    #showcase .container {
+        margin-top: 52vh;
+    }
+#fun {
+    height: 70vh;
+}
+
+#fun img {
+    height: 70vh;
+}
+
+
+#gift-card .container {
+    margin-top: -8vh;
+    margin-bottom: 2vh;
+}
+    .gift-card-container img {
+        margin-top: 15vh;
+    }
+
+    #fun .container h3 {
+        font-size: 1.5rem;
+    }
+footer .footer-col {
+    display: none;
+}
+
+}
+
+@media screen and (max-width: 700px){
+    .gift-card-container {
+        height: 130vh;
+        grid-template-columns: 1fr;
+        margin-top: 10vh;
+    }
+    .gift-card-container img {
+        width: 80%;
+        margin-top: -10vh;
+    }
+    .gift-card-section-text {
+        margin-top: -15vh;
+    }
+
+    #fun .container h3 {
+        font-size: 1.3rem;
+    }
+}
+
+
+@media screen
+and (max-width: 580px) {
+
+    #showcase .container {
+        margin: 55vh 0 0 30vw;
+        /*margin-left: 42vw;*/
+        /*margin-right: auto;*/
+    }
+
+
+    #fun .container h3 {
+        font-size: 1.1rem;
+    }
+
+    #gift-card .container {
+        margin-top: 14vh;
+        margin-bottom: 2vh;
+
+
+    }
+}
+
+@media screen
+and (max-height: 550px) {
+
+    #showcase .container {
+        margin-top: 40vh;
+    }
+
+    #showcase {
+        height:100vh;
+    }
+
+    .gift-card-p1 {
+        font-size: 1rem;
+    }
+
+    #gift-card .container {
+        height: 205vh;
+        margin-top: -15vh;
+        margin-bottom: 2vh;
+    }
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
